@@ -1,8 +1,6 @@
 
 exports.seed = function (knex, Promise) {
-  // Deletes ALL existing entries
     return knex('resolution').del().then(() => {
-    // Inserts seed entries
     return knex('resolution').insert([{
         id: 1,
         dueDate: '1997-02-01',
